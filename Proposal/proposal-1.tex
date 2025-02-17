@@ -27,7 +27,7 @@
 
 \section{Project Title}
 
-One-shot learning for handwritten signature verification
+Handwritten signature verification system with Siamese neural networks.
 
 \section{Team Members}
 
@@ -44,9 +44,21 @@ Please describe your project objective in this part.
 
 \begin{itemize}
   \item What is the project Objective?
+  \begin{itemize}
+      To develop a system that verifies handwritten signatures with only one reference sample.
+  \end{itemize}
   \item What problem to solve?
+  \begin{itemize}
+      To prevent signature forgery which is common in banking, legal and financial activities.
+  \end{itemize}
   \item Why the problem is important?
+  \begin{itemize}
+      Many authentication systems still rely on signatures and traditional Machine Learning(ML) models require large labeled datasets.
+  \end{itemize}
   \item Why machine learning can help to solve the problem?
+  \begin{itemize}
+      Siamese neural networks can compare a new signature against a stored reference with high accuracy, even if only one sample is available (Koch et al., 2015).
+  \end{itemize}
 \end{itemize}
 
 \subsection{Datasets}
@@ -55,9 +67,24 @@ Please describe your dataset in this section.
 
 \begin{itemize}
   \item What is the data and where you obtain it?
+  \begin{itemize}
+      Pashkin, Zack. Image dataset for handwritten signature verification. Kaggle.\\
+      https://www.kaggle.com/datasets/tienen/handwritten-signature-verification/data
+  \end{itemize}
   \item How the data is collected?
+  \begin{itemize}
+      Crowdsourcing.
+  \end{itemize}
   \item What will be the features and labels you will use?
+  \begin{itemize}
+      Features: Original unique IDs, original signatures, forged unique IDs, forged signatures.\\
+      Labels: Original signature, forged signature.
+  \end{itemize}
   \item How many examples for training, validation, and testing?
+  \begin{itemize}
+      Total: 5626 signatures (2913 original, 2713 forged)\\
+      Train-validation-test split: 60-20-20 ratio
+  \end{itemize}
 \end{itemize}
 
 \subsection{Machine Learning Algorithm}
@@ -66,11 +93,19 @@ Please describe the machine learning algorithm you want to use
 for your project.
 
 \noindent Please justify your selection.
-
+    \begin{itemize}
+        Siamese neural network. Siamese neural networks are well-suited for matching different instances of same signature.
+  \end{itemize}
 \subsection{Expected Outcomes}
 
 What is your expected outcome for this project?
+    \begin{itemize}
+        A signature verification system for banking, legal and financial authentication. Potential use for fraud prevention.
+    \end{itemize}
 
-
+\subsection{References}
+\begin{itemize}
+      Koch, G., Zemel, R., Salakhutdinov, R. (2015). Siamese neural networks for one-shot image recognition. \textit{ICML deep learning workshop}, vol. 2., https://paperswithcode.com/paper/siamese-neural-networks-for-one-shot-image
+  \end{itemize}
 
 \end{document}
