@@ -1,0 +1,39 @@
+=== Data Quality Report ===
+Loaded 6125 valid images
+Rejected images - Low contrast: 0, Overexposed: 46, Uniform: 0
+Extracting HOG Features: 100%|███████████████████████████████| 6125/6125 [00:10<00:00, 586.42it/s]
+
+=== Data Splits ===
+Training samples: 3675 (60%)
+Validation samples: 1225 (20%)
+Test samples: 1225 (20%)
+
+=== SVM Training Diagnostics ===
+Cross-val scores: [0.63401361 0.68435374 0.65986395 0.63673469 0.60816327]
+Mean CV accuracy: 0.64
+
+Training completed in 8.2s
+Number of support vectors: 3436
+
+=== Validation Results ===
+Validation Accuracy: 0.63
+              precision    recall  f1-score   support
+
+           0       0.63      0.68      0.65       633
+           1       0.63      0.57      0.59       592
+
+    accuracy                           0.63      1225
+   macro avg       0.63      0.62      0.62      1225
+weighted avg       0.63      0.63      0.63      1225
+
+
+=== Final Evaluation ===
+Test Accuracy: 0.69
+              precision    recall  f1-score   support
+
+           0       0.68      0.75      0.71       633
+           1       0.70      0.63      0.66       592
+
+    accuracy                           0.69      1225
+   macro avg       0.69      0.69      0.69      1225
+weighted avg       0.69      0.69      0.69      1225
