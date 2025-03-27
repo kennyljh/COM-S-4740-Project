@@ -1,0 +1,11 @@
+=== Final Evaluation ===
+Accuracy: 0.6761
+
+              precision    recall  f1-score   support
+
+         0.0     0.6799    0.6655    0.6727      2984
+         1.0     0.6725    0.6867    0.6795      2984
+
+    accuracy                         0.6761      5968
+   macro avg     0.6762    0.6761    0.6761      5968
+weighted avg     0.6762    0.6761    0.6761      5968
