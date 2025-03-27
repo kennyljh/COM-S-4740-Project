@@ -1,0 +1,40 @@
+=== Data Quality Report ===
+Loaded 6125 valid images
+Rejected images - Low contrast: 0, Overexposed: 46, Uniform: 0
+Extracting Perceptron Features: 100%|██████████████████████| 6125/6125 [00:00<00:00, 10512.79it/s]
+
+=== Data Splits ===
+Training: 3675 (60%)
+Validation: 1225 (20%)
+Test: 1225 (20%)
+
+=== Logistic Regression Training Diagnostics ===
+Cross-val accuracy: [0.52789116 0.54965986 0.52517007 0.53469388 0.54693878]
+Mean CV accuracy: 0.54
+
+Training completed in 128.8s
+
+=== Validation Results ===
+Accuracy: 0.52
+AUC: 0.53
+              precision    recall  f1-score   support
+
+           0       0.54      0.52      0.53       633
+           1       0.51      0.53      0.52       592
+
+    accuracy                           0.52      1225
+   macro avg       0.53      0.53      0.52      1225
+weighted avg       0.53      0.52      0.53      1225
+
+
+=== Test Results ===
+Accuracy: 0.57
+AUC: 0.58
+              precision    recall  f1-score   support
+
+           0       0.59      0.58      0.58       633
+           1       0.56      0.57      0.56       592
+
+    accuracy                           0.57      1225
+   macro avg       0.57      0.57      0.57      1225
+weighted avg       0.57      0.57      0.57      1225
